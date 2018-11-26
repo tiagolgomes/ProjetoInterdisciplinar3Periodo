@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NovoEstabelecimentoActivity">
+
+    <TextView
+        android:id="@+id/textNovoEstabTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Cadastro de Novo Estabelecimento: " />
+
+    <TextView
+        android:id="@+id/textEspaco4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+    " />
+
+    <TextView
+        android:id="@+id/textNovoEstabTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Estabelecimento: " />
+
+    <Spinner
+        android:id="@+id/spinnerTipoEstabelecimento"
+        android:entries="@array/tipo_estabelecimento_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoEstabNome"
+        android:hint="Nome"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoEstabEndereco"
+        android:hint="Endereço"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoEstabCidade"
+        android:hint="Cidade"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <EditText
+            android:id="@+id/editNovoEstabDDD"
+            android:hint="DDD"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editNovoEstabTelefone"
+            android:hint="Telefone"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/editNovoEstabEmail"
+        android:hint="E-mail"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoEstabEstilo"
+        android:hint="Estilo"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoEstabValor"
+        android:hint="Valor"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonCadastrarEstab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar" />
+
+</LinearLayout>

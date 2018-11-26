@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NovoUsuarioActivity">
+
+    <TextView
+        android:id="@+id/textNovoUsuarioTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Cadastro de Novos Usuário: " />
+
+    <TextView
+        android:id="@+id/textEspaco4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textNovoUsuarioTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Usuário: " />
+
+    <Spinner
+        android:id="@+id/spinnerTipoUsuario"
+        android:entries="@array/tipo_usuario_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Colocar nas Strings:
+     <string-array name="tipo_usuario_array">
+        <item>Promotor</item>
+        <item>Consumidor</item>
+    </string-array>
+     -->
+
+    <EditText
+        android:id="@+id/editNovoUsuarioNome"
+        android:hint="Nome"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoUsuarioCidade"
+        android:hint="Cidade"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <EditText
+            android:id="@+id/editNovoUsuarioDDD"
+            android:hint="DDD"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editNovoUsuarioTelefone"
+            android:hint="Telefone"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/editNovoUsuarioEmail"
+        android:hint="E-mail"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoUsuarioLogin"
+        android:hint="Login"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNovoUsuarioSenha"
+        android:hint="Senha"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonCadastrarUsuario"
+        android:onClick="cadastrarNovoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar" />
+
+</LinearLayout>

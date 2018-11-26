@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ProjetoInterdisciplinar3Periodo</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_login">Login</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Logar</string>
+    <string name="action_sign_in_short">Logar</string>
+    <string name="error_invalid_login">This login address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing login
+        completions."
+    </string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="action_return_inicial_page">Voltar</string>
+
+    <string-array name="tipo_usuario_array">
+        <item>Promotor</item>
+        <item>Consumidor</item>
+    </string-array>
+
+    <string-array name="tipo_estabelecimento_array">
+        <item>Bar</item>
+        <item>Balada</item>
+        <item>Restaurante</item>
+    </string-array>
+
+    <!-- Strings new's -->
+</resources>
