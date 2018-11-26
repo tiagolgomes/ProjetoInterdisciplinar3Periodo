@@ -21,7 +21,8 @@
         <TextView
             android:id="@+id/nomeUsuario"
             android:textSize="20dp"
-            android:hint="Fulano"
+            android:text="Arthur Niro Machado"
+            android:hint="Nome do Usuário"
             android:layout_width="225dp"
             android:layout_height="wrap_content" />
 
@@ -34,7 +35,8 @@
         <TextView
             android:id="@+id/tipoUsuario"
             android:textSize="20dp"
-            android:hint="Promoter"
+            android:text="Consumidor"
+            android:hint="Tipo do Usuário"
             android:layout_width="225dp"
             android:layout_height="wrap_content" />
 
@@ -47,7 +49,7 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:onClick="novoEstab"
+        android:onClick="callNovoEstab"
         android:text="Novo Estabelecimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -64,10 +66,31 @@
         android:layout_height="wrap_content"
         android:text="Lista de Estabelecimentos:" />
 
+    <TextView
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bar do Alemão" />
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria: BAR" />
+
+
+    <!--
     <ListView
         android:id="@+id/listaEstab"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
+    -->
 
 </LinearLayout>
