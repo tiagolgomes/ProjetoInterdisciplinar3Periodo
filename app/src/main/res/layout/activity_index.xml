@@ -83,13 +83,10 @@
         android:layout_height="wrap_content"
         android:text="Categoria: BAR" />
 
-
-    <!--
     <ListView
-        android:id="@+id/listaEstab"
+        android:id="@+id/listaEstabs"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
-    -->
 
 </LinearLayout>

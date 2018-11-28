@@ -4,12 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.tiago.projetointerdisciplinar3periodo.R;
+import com.example.tiago.projetointerdisciplinar3periodo.model.Estabelecimento;
 import com.example.tiago.projetointerdisciplinar3periodo.model.Usuario;
 import com.example.tiago.projetointerdisciplinar3periodo.repository.UsuarioRepository;
+
+import java.util.List;
 //import com.example.tiago.projetointerdisciplinar3periodo.repository.EstabelecimentoRepository;
 
 public class MainActivity extends Activity {
@@ -17,6 +22,9 @@ public class MainActivity extends Activity {
     private EditText editLogin;
     private EditText editSenha;
     private UsuarioRepository repository;
+    private ListView listaEstabs;
+
+    ArrayAdapter<Estabelecimento> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +34,11 @@ public class MainActivity extends Activity {
         editLogin = findViewById(R.id.editLogin);
         editSenha = findViewById(R.id.editSenha);
 
+        listaEstabs = findViewById(R.id.listaEstabs);
+
         repository = new UsuarioRepository(this);
+
+        //atualizarEstabs();
     }
 
     public void realizarLogin(View view){
@@ -59,4 +71,8 @@ public class MainActivity extends Activity {
         startActivity(indexActivity);
         finish();
     }
+
+    //private void atualizarEstabs(){
+    //    List<Estabelecimento> estabelecimentos = repository.getAllEstabelecimentos();
+    //}
 }

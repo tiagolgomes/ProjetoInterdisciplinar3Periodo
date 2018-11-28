@@ -14,6 +14,8 @@ import com.example.tiago.projetointerdisciplinar3periodo.repository.UsuarioRepos
 
 import java.util.List;
 
+/*
+
 public class UsuarioAdapter extends ArrayAdapter<Usuario> {
     private int rId;
 
@@ -42,3 +44,5 @@ public class UsuarioAdapter extends ArrayAdapter<Usuario> {
         return mView;
     }
 }
+
+*/

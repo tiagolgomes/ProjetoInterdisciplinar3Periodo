@@ -16,11 +16,8 @@
         android:text="Cadastro de Novo Estabelecimento: " />
 
     <TextView
-        android:id="@+id/textEspaco4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="
-    " />
+        android:layout_height="30dp" />
 
     <TextView
         android:id="@+id/textNovoEstabTipo"
@@ -99,10 +96,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/buttonCadastrarEstab"
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar" />
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/buttonCadastrarEstab"
+            android:onClick="cadastrarNovoEstab"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/buttonVoltarIndexx"
+            android:onClick="abrirIndex"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Voltar" />
+
+    </GridLayout>
 
 </LinearLayout>

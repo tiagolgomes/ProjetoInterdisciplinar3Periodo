@@ -1,44 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:columnCount="2"
-    android:padding="10dp"
-    >
-    <LinearLayout
-        android:padding="5dp"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_columnSpan="2">
+        android:columnCount="2">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textNE"
+            android:textSize="18dp"
+            android:text="Nome: "
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_weight="1"
             android:id="@+id/textNomeEstab"
             android:textSize="18dp"
-            android:text="Nome do Estab"
-            android:layout_width="wrap_content"
+            android:hint="Nome do Estabelecimento"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textCE"
+            android:textSize="16dp"
+            android:text="Categoria: "
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_weight="1"
             android:id="@+id/textCatEstab"
             android:textSize="16dp"
-            android:text="Categoria do Estab"
-            android:layout_width="wrap_content"
+            android:hint="Categoria do Estabelecimento "
+            android:layout_width="220dp"
             android:layout_height="wrap_content"/>
-    </LinearLayout>
+
+    </GridLayout>
 
     <TextView
-        android:id="@+id/textAnoFilme"
-        android:textSize="16dp"
-        android:layout_columnSpan="2"
-        android:text="Ano do Filme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Nota:"
-        android:textSize="20dp"
-        android:layout_gravity="center_vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
-
-</GridLayout>
+</LinearLayout>
