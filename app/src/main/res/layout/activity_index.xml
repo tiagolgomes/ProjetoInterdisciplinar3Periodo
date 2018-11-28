@@ -8,6 +8,7 @@
     tools:context=".activity.IndexActivity">
 
     <GridLayout
+        android:onClick="alterarUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2">
@@ -21,7 +22,6 @@
         <TextView
             android:id="@+id/nomeUsuario"
             android:textSize="20dp"
-            android:text="Arthur Niro Machado"
             android:hint="Nome do Usuário"
             android:layout_width="225dp"
             android:layout_height="wrap_content" />
@@ -35,7 +35,6 @@
         <TextView
             android:id="@+id/tipoUsuario"
             android:textSize="20dp"
-            android:text="Consumidor"
             android:hint="Tipo do Usuário"
             android:layout_width="225dp"
             android:layout_height="wrap_content" />

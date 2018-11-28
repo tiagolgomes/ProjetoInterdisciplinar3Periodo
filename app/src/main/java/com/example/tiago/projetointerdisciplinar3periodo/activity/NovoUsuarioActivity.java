@@ -60,5 +60,6 @@ public class NovoUsuarioActivity extends Activity {
     private void callMainActivity(){
         Intent mainActivity = new Intent(NovoUsuarioActivity.this, MainActivity.class);
         startActivity(mainActivity);
+        finish();
     }
 }

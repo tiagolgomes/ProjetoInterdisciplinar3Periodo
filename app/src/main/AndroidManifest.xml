@@ -27,7 +27,12 @@
         <activity
             android:name=".activity.NovoEstabelecimentoActivity"
             android:label="Novo Estabelecimento" />
-        <activity android:name=".activity.IndexActivity"></activity>
+        <activity
+            android:name=".activity.IndexActivity"
+            android:label="Index"/>
+        <activity
+            android:name=".activity.AlterarUsuarioActivity"
+            android:label="Alterar Usuário" />
     </application>
 
 </manifest>

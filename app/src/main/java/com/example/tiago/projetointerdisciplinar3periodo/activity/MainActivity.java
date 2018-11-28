@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
         editLogin = findViewById(R.id.editLogin);
         editSenha = findViewById(R.id.editSenha);
 
-        repository = new UsuarioRepository(getApplicationContext());
+        repository = new UsuarioRepository(this);
     }
 
     public void realizarLogin(View view){
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
             Toast.makeText(this, "Login inválido!", Toast.LENGTH_SHORT).show();
         }
         else {
-            Usuario usuario = repository.LoadUsuario(login, senha);
+            Usuario usuario = repository.loadUsuario(login, senha);
             if (usuario != null){
                 UsuarioRepository.usuario = usuario;
                 callIndexActivity();
@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void callNovoUsuario(View View){
+    public void callNovoUsuarioActivity(View View){
         Intent novoUsuario = new Intent(MainActivity.this,NovoUsuarioActivity.class);
         startActivity(novoUsuario);
         finish();

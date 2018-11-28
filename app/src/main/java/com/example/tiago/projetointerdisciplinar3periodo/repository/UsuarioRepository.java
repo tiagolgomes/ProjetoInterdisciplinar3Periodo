@@ -16,7 +16,7 @@ public class UsuarioRepository {
         mUsuarioDAO = db.usuarioDAO();
     }
 
-    public Usuario LoadUsuario (String login, String senha){
+    public Usuario loadUsuario(String login, String senha){
         return mUsuarioDAO.loadUsuario(login, senha);
     }
 

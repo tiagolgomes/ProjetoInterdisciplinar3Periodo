@@ -70,7 +70,7 @@
 
     <Button
         android:id="@+id/buttonNovoLogin"
-        android:onClick="callNovoUsuario"
+        android:onClick="callNovoUsuarioActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Criar Conta" />
